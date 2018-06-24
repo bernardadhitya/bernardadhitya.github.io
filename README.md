@@ -8,6 +8,6 @@ This project is created by:
 - Vollario Martha
 
 This project was assigned to us by our lecturer:
-Ayu Hidayah Aslamiah, S.Kom., M,TI
+- Ayu Hidayah Aslamiah, S.Kom., M,TI
 
 Enjoy~
