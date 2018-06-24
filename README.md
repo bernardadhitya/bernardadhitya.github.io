@@ -10,4 +10,6 @@ This project is created by:
 This project was assigned to us by our lecturer:
 - Ayu Hidayah Aslamiah, S.Kom., M,TI
 
+UPDATE: This website is compatible in desktop, tablet or smartphone
+
 Enjoy~
