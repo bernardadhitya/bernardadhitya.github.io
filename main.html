@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>FunStay - Experience Authentic Homestay Experience</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar_container">
+            <div class="item logo">
+                <div></div>
+                <a href="main.html" style="font-weight: lighter">FunStay</a>
+                <div></div>
+            </div>
+            <div class="item profile">
+                
+                <i class="material-icons"><a href="profile.html">person</a></i>
+                
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+        
+        <h1 style="font-size: 5vw">Check this out!</h1>
+        <div class="recommend_text">
+            <p style="font-size:3vw; font-weight: lighter">Ever want to have a vacation somewhere exotic but are tight on the budget? Worry not, for we offer affordable homestays in popular tourism spots in Indonesia. Book your stay now!</p>
+        </div>
+        <div class="recommended_container">
+            
+            <div class="recommended_thumbnail_container">
+                <div class="item">
+                    <img src="images/yuli_2.jpg" alt="Yuli's Homestay"
+                    style="width: 100%; object-fit:fill;">
+                </div>
+                <div class="item recommend2"><a href="yuli_homestay.html">Yuli's Homestay</a></div>
+            </div>
+            
+            <div style="width: 30px; height: 10px"></div>
+            
+            <div class="recommended_thumbnail_container">
+                <div class="item">
+                    <img src="images/mbae_2.jpg" alt="Mbae's Homestay"
+                    style="width: 100%; object-fit:fill;">
+                </div>
+                <div class="item recommend2"><a href="mbae_homestay.html">Mbae Homestay</a></div>
+            </div>
+            
+            <div style="width: 30px; height: 10px"></div>
+            
+            <div class="recommended_thumbnail_container">
+                <div class="item">
+                    <img src="images/bule_2.jpg" alt="Bali Bule Homestay"
+                    style="width: 100%; object-fit:fill;">
+                </div>
+                <div class="item recommend3"><a href="bali_bule_homestay.html">Bali Bule</a></div>
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+        <div class="break_container"></div>
+        
+        <h1 style="font-size: 5vw">Top Bloggers</h1>
+        <div class="recommend_text">
+            <p style="font-size:3vw; font-weight: lighter">Here are some of our top bloggers. Various contents, from photography, culinary travels, adventures and cultures, ready to be reviewed by our top bloggers to give you an insight, on why you should try this exciting homestay experience.</p>
+        </div>
+        
+        <div class="break_container"></div>
+        
+        <div class="body_container">
+            <div class="feeds_container">
+                <div class="flex_container">
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/mark_content_1.jpg" alt="Mark Washington"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="marcus_blog.html">Marc W.</a></div>
+                    </div>
+                    <div style="width: 30px; height: 10px"></div>
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/jaqueline_content_1.jpg" alt="Jaqueline Carol"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="jaqueline_blog.html">Jaqueline Carol</a></div>
+                    </div>
+                </div>
+                <div class="flex_container">
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/alex_content_1.jpg" alt="Alex Sanders"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="alex_blog.html">Alex Sanders</a>
+                        </div>
+                    </div>
+                    <div style="width: 30px; height: 10px"></div>
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/jerome_content_1.jpg" alt="Jerome Vermontson"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="jerome_blog.html">Jerome V.</a></div>
+                    </div>
+                </div>
+                <div class="flex_container">
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/roderick_content_1.jpg" alt="Roderick Schimann"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="roderick_blog.html">Roderick Schimann</a></div>
+                    </div>
+                    <div style="width: 30px; height: 10px"></div>
+                    <div class="content_container">
+                        <div class="item">
+                            <img src="images/mark_post_1.jpg" alt="Jerome Vermontson"
+                            style="width: 100%; object-fit:contain">
+                        </div>
+                        <div class="item"><a href="marcus_blog.html">M. Washington</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        <style>
+            /*Styling for specific containers*/
+            
+            .navbar_container {
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-columns: auto auto auto;
+            }
+            /*
+            .recommended_container {
+                display: grid;
+                grid-gap: 20px;
+                border: 10px solid var(--yellow);
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 200px auto;
+            }*/
+            @media(min-width:720px){
+                .recommended_container {
+                    display:flex;
+                }
+            }
+            .break_container {
+                height: 25px;
+            }
+            .body_container {
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+            }
+            .content_container {
+                display: grid;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-rows: auto 100px;
+            }
+            .feeds_container {
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-rows: repeat(5, auto);
+            }
+            .recommended_thumbnail_container{
+                display: grid;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-rows: auto 1fr;
+                font-weight: lighter;
+            }
+            @media(min-width:768px){
+                .flex_container{
+                    display: flex;
+                }   
+            }
+            
+            /*Styling for scpecific items*/
+            .logo{
+                grid-column: span 2;
+            }
+            .recommend_text {
+                font-size: 28px;
+                grid-template-rows: auto-fit;
+                grid-column: 1/-1;
+            }
+            .profile {
+                grid-column: -1;
+            }
+            .news_header {
+                font-size: 28px;
+                grid-template-rows: auto-fit;
+                grid-column: 1;
+            }
+            input.btn {
+                font-weight: bold;
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                font-size: 35px;
+                background-color: var(--yellow);
+            }
+            a:link {
+                color: var(--black); 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </body>
+</html>

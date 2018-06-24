@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>FunStay - Experience Authentic Homestay Experience</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar_container">
+            <div class="item logo">
+                <div></div>
+                <a href="index.html">FunStay</a>
+                <div></div>
+            </div>
+            <div class="item profile">
+                
+                <i class="material-icons"><a href="profile.html">person</a></i>
+                
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+        
+        <div class="personal_information_container">
+            <div style="grid-column: span 2; font-size: 30px; font-weight: lighter;">
+                <h1 style="font-size: 7vw">Booking Registration</h1>
+                <div class="break_container"></div>
+                <h2 style="font-size: 5vw">Your Information</h2>
+            </div>
+            <div>
+                <form action="#">
+                    <label for="fname" style="font-size: 3vw; font-weight: lighter;">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                    <label for="lname" style="font-size: 3vw; font-weight: lighter;">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="lname" style="font-size: 3vw; font-weight: lighter;">Phone Number</label>
+                    <input type="text" id="phone" name="phonenum" placeholder="Your phone number..">
+                    
+                  <!--<input type="submit" value="Submit">-->
+                </form>
+            </div>
+            <div style="font-size: 30px; font-weight: lighter;">
+                <label for="lname" style="font-size: 3vw;">Check-In</label>
+                <form action="#">
+                    <input type="date" name="check_in">
+                </form>
+                
+                <label for="lname" style="font-size: 3vw;">Check-Out</label>
+                <form action="#">
+                    <input type="date" name="check_in">
+                </form>
+            </div>
+            
+        </div>
+        <div class="break_container"></div>
+        
+        <h2 style="font-size: 5vw">Payment Details</h2>
+        
+        <div class="break_container"></div>
+        
+        <div class="payment_container">
+            <div style="font-size: 4vw; font-weight: lighter;">
+                <div class="break_container"></div>
+                <div class="payment_detail_container">
+                    <div class="table"> 
+                        Deluxe Room (1 Night) x1
+                    </div>
+                    <div class="table">
+                        Rp 300.000 
+                    </div>
+                    <div class="table">
+                        Taxes and Other Fees (Including Sales Tax, Service Fee and Other Taxes)
+                    </div>
+                    <div class="table">
+                        Rp 50.000
+                    </div>
+                    <div class="item" style="font-size: 3vw">
+                        Total
+                    </div>
+                    <div class="item" style="font-size: 3vw">
+                        Rp 350.000
+                    </div>
+                </div>
+            </div>
+            <div style="grid-template-rows: auto 1fr 1fr 1fr">
+                <div class="break_container"></div>
+                <h2 style="font-size: 3vw; font-weight: lighter">
+                    Payment Method
+                </h2>
+                <form action="#" style="font-size: 2vw; font-weight: lighter">
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Credit Card</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Transfer and ATM</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>Direct Debit</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>Indomaret Card</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input class="with-gap" name="group1" type="radio"  />
+                        <span>UANGKU Balance</span>
+                      </label>
+                    </p>
+                </form>
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+            
+        <div class="payment_confirmation_container">
+            <div style="font-size: 3vw; font-weight: lighter">
+                <h2>
+                    Payment Confirmation
+                </h2>
+                
+                <div class="break_container"></div>
+                <label class="label_container" style="font-size: 3vw; font-weight: lighter"> I have read the Terms and Conditions
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                
+                
+                <div class="item profile">
+                    <form>
+                        <input class="btn" type="button" value="Submit" onclick="window.location.href='order_complete.html'" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            /*Styling for specific containers*/
+            .navbar_container {
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-columns: auto auto auto;
+            }
+            
+            .payment_confirmation_container {
+                display: grid;
+                grid-gap: 20px; 
+            }
+            .payment_detail_container {
+                display: grid;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: repeat(3, auto);
+            }
+            @media(min-width:768px){
+                .personal_information_container{
+                    display: grid;
+                    grid-gap: 20px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto 1fr;
+                }
+                .payment_container{
+                    display: grid;
+                    grid-gap: 40px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto 1fr;
+                }
+            }
+            .break_container {
+                height: 25px;
+            }
+            /*Styling for scpecific items*/
+            .logo{
+                grid-column: span 2;
+            }
+            .profile {
+                grid-column: -1;
+            }
+            .table {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                font-size: 3vw;
+                background-color: #f7f7f7;
+            }
+            input.btn {
+                font-weight: bold;
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                font-size: 5vw;
+                background-color: var(--yellow);
+            }
+            /*Styling for forms*/
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            
+            input[type=date], select {
+                width: 100%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            /*Styling for checkbox*/
+            /* Customize the label (the container) */
+            .label_container {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            /* Hide the browser's default checkbox */
+            .label_container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                background-color: #eee;
+            }
+            
+            /* On mouse-over, add a grey background color */
+            .label_container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            
+            /* When the checkbox is checked, add a blue background */
+            .label_container input:checked ~ .checkmark {
+                background-color: #2196F3;
+            }
+            
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            
+            /* Show the checkmark when checked */
+            .label_container input:checked ~ .checkmark:after {
+                display: block;
+            }
+            
+            /* Style the checkmark/indicator */
+            .label_container .checkmark:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            a:link {
+                color: var(--black); 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+        
+    </body>
+</html>

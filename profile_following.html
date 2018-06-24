@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>FunStay - Experience Authentic Homestay Experience</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="navbar_container">
+            <div class="item logo">
+                <div></div>
+                <a href="index.html" style="font-weight: lighter">FunStay</a>
+                <div></div>
+            </div>
+            <div class="item profile">
+                
+                <i class="material-icons"><a href="profile.html">person</a></i>
+                
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+        
+        <div class="profile_container">
+            <div class="main_profile_container">
+                <div class="item profile_picture">
+                    <i class="material-icons" style="font-size: 20vw">person</i>
+                </div>
+                <div class="item profile_name" style="font-size: 3vw;">Name</div>
+                <div class="item profile_following" style="font-size: 3vw;">Following</div>
+            </div>
+            
+            <div class="item">
+                <a href="profile.html" style="font-weight: lighter; font-size: 4vw">Travel Log</a>
+            </div>
+            <div class="item">
+                <a href="profile_following.html" style="font-weight: lighter; font-size: 4vw">Followings</a>
+            </div>
+        </div>
+        
+        <div class="break_container"></div>
+        
+        <div class="followings_container">
+            <div class="item no_header" style="font-size: 3vw;">No. </div>
+            <div class="item name_header" style="font-size: 3vw;">Name </div>
+            <div class="item follow_header" style="font-size: 3vw;">Follows </div>
+            <div class="item no_of_stays_header" style="font-size: 3vw;">No. of Stays</div>
+            
+            <div class="table no_header">1</div>
+            <div class="table name_header">John Smith</div>
+            <div class="table follow_header">153</div>
+            <div class="table no_of_stays_header">12</div>
+            
+            <div class="table no_header">2</div>
+            <div class="table name_header">Erlen Meyer</div>
+            <div class="table follow_header">28</div>
+            <div class="table no_of_stays_header">5</div>
+            
+            <div class="table no_header">3</div>
+            <div class="table name_header">Barrack Obama</div>
+            <div class="table follow_header">1.5m</div>
+            <div class="table no_of_stays_header">1768</div>
+            
+            <div class="table no_header">4</div>
+            <div class="table name_header">Mimi Fairy</div>
+            <div class="table follow_header">2</div>
+            <div class="table no_of_stays_header">1</div>
+        </div>
+        <style>
+            /*Styling for specific containers*/
+            .navbar_container {
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-columns: auto auto auto;
+            }
+            .profile_container{
+                display: grid;
+                grid-gap: 20px;
+                /*border: 10px solid var(--yellow);*/
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 100px;
+            }
+            .break_container {
+                height: 25px;
+            }
+            .main_profile_container {
+                    grid-column: span 2;
+                    justify-content: center;
+                    display: grid;
+                    /*border: 10px solid var(--yellow);*/
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto auto auto;
+
+                }
+            @media(min-width:768px){
+                .main_profile_container {
+                    grid-column: span 2;
+                    justify-content: center;
+                    display: grid;
+                    /*border: 10px solid var(--yellow);*/
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 150px 150px;
+                }
+            }
+            @media(max-width:768px){
+                .profile_picture {
+                    grid-row: span 2;
+                    height: 200px;
+                }
+            }
+            .followings_container {
+                display: grid;
+                /* border: 10px solid var(--yellow); */
+                grid-template-columns: repeat(4, auto);
+                grid-template-rows: repeat(5, auto);
+                margin-right: auto;
+                margin-left: auto;
+            }
+            /*Styling for scpecific items*/
+            .logo{
+                grid-column: span 2;
+            }
+            .profile {
+                grid-column: -1;
+            }
+            input.btn {
+                font-weight: bold;
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                font-size: 35px;
+                background-color: var(--yellow);
+            }
+            .profile_picture {
+                grid-row: span 2;
+            }
+            .table {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                border: 5px solid rgba(0, 0, 0, 0.03);
+                border-radius: 3px;
+                font-size: 28px;
+                background-color: #f7f7f7;
+                font-size: 3vw;
+            }
+            a:link {
+                color: var(--black); 
+                background-color: transparent; 
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--black);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </body>
+</html>
